@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="11" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="TheLegendOfZelda/tiles1.png" trans="ff00ff" width="307" height="163"/>
+ </tileset>
+ <tileset firstgid="163" name="kind" tilewidth="16" tileheight="16">
+  <image source="kind.png" trans="ff00ff" width="115" height="50"/>
+  <tile id="4">
+   <properties>
+    <property name="Warp" value="cave1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tiles" width="16" height="11">
+  <data encoding="base64" compression="zlib">
+   eJyTYmBgkBpAzExDLIVGExKntn3E0kPZ/wOZdkAYAKBQCSo=
+  </data>
+ </layer>
+ <layer name="Bloques" width="16" height="11" opacity="0.41">
+  <data encoding="base64" compression="zlib">
+   eJxbzMDAsHgA8RIa4sVoNCFxattHLD2U/T+QaQeEAYixcHI=
+  </data>
+ </layer>
+</map>

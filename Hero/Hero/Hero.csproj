@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10C4E2F3-B618-4F13-913C-579046F707BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hero</RootNamespace>
+    <AssemblyName>Hero</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Camera.cs" />
+    <Compile Include="font\Font.cs" />
+    <Compile Include="font\Letter.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameScreen.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="IntroScreen.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\MenuItem.cs" />
+    <Compile Include="Menu\MenuManager.cs" />
+    <Compile Include="World\Entitys\Enemys\OctorockBall.cs" />
+    <Compile Include="World\Entitys\Entity.cs" />
+    <Compile Include="World\Items\Angel.cs" />
+    <Compile Include="World\Items\Bomb.cs" />
+    <Compile Include="World\Items\Hearth.cs" />
+    <Compile Include="World\Items\Item.cs" />
+    <Compile Include="World\Items\Rupee.cs" />
+    <Compile Include="World\Use\Collision.cs" />
+    <Compile Include="World\Use\Polygon.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="TittleScreen.cs" />
+    <Compile Include="World\Entitys\Enemys\Enemy.cs" />
+    <Compile Include="World\Entitys\Enemys\Octorock.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="World\Entitys\Gui.cs" />
+    <Compile Include="World\Entitys\Player.cs" />
+    <Compile Include="World\Entitys\SpriteManager.cs" />
+    <Compile Include="World\Layer.cs" />
+    <Compile Include="World\Tile.cs" />
+    <Compile Include="World\WorldScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TiledSharp">
+      <HintPath>..\..\..\..\..\Desktop\TiledSharp-master\TiledSharp\bin\Debug\TiledSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Model\arms\p_arm_idle.png" />
+    <Content Include="Content\Model\arms\p_arm_idle_a.png" />
+    <Content Include="Content\Model\arms\p_arm_slide_0.png" />
+    <Content Include="Content\Model\arms\p_arm_throw_0.png" />
+    <Content Include="Content\Model\arms\p_arm_walk.png" />
+    <Content Include="Content\Model\arms\p_forarm_idle_0.png" />
+    <Content Include="Content\Model\arms\p_forarm_idle_a.png" />
+    <Content Include="Content\Model\arms\p_forarm_jump_0.png" />
+    <Content Include="Content\Model\arms\p_forarm_side_0.png" />
+    <Content Include="Content\Model\arms\p_forarm_under_0.png" />
+    <Content Include="Content\Model\arms\p_forarm_walk_a.png" />
+    <Content Include="Content\Model\arms\throw_blur_0.png" />
+    <Content Include="Content\Model\feet\p_foot_hit_a.png" />
+    <Content Include="Content\Model\feet\p_foot_hot_0.png" />
+    <Content Include="Content\Model\feet\p_foot_idle_0.png" />
+    <Content Include="Content\Model\feet\p_foot_jump_0.png" />
+    <Content Include="Content\Model\feet\p_foot_walk_0.png" />
+    <Content Include="Content\Model\feet\p_foot_walk_a.png" />
+    <Content Include="Content\Model\hands\p_hand_1.png" />
+    <Content Include="Content\Model\hands\p_hand_2.png" />
+    <Content Include="Content\Model\hands\p_hand_a.png" />
+    <Content Include="Content\Model\hands\p_hand_a_edge.png" />
+    <Content Include="Content\Model\hands\p_hand_b.png" />
+    <Content Include="Content\Model\hands\p_hand_c.png" />
+    <Content Include="Content\Model\hands\p_hand_edge_0.png" />
+    <Content Include="Content\Model\hands\p_hand_float_0.png" />
+    <Content Include="Content\Model\hands\p_hand_hang_0.png" />
+    <Content Include="Content\Model\hands\p_hand_hang_1.png" />
+    <Content Include="Content\Model\hands\p_hand_hang_a.png" />
+    <Content Include="Content\Model\hands\p_hand_hit_0.png" />
+    <Content Include="Content\Model\hands\p_hand_hit_a.png" />
+    <Content Include="Content\Model\hands\p_hand_idle_0.png" />
+    <Content Include="Content\Model\hands\p_hand_jump_0.png" />
+    <Content Include="Content\Model\hands\p_hand_jump_a.png" />
+    <Content Include="Content\Model\hands\p_hand_prepunch_0.png" />
+    <Content Include="Content\Model\hands\p_hand_prepunch_x.png" />
+    <Content Include="Content\Model\hands\p_hand_punch_0.png" />
+    <Content Include="Content\Model\hands\p_hand_push_0.png" />
+    <Content Include="Content\Model\hands\p_hand_push_a.png" />
+    <Content Include="Content\Model\hands\p_hand_slide_0.png" />
+    <Content Include="Content\Model\hands\p_hand_throw_0.png" />
+    <Content Include="Content\Model\hands\p_punch_blur.png" />
+    <Content Include="Content\Model\head\p_head_blink_0.png" />
+    <Content Include="Content\Model\head\p_head_blink_1.png" />
+    <Content Include="Content\Model\head\p_head_concern.png" />
+    <Content Include="Content\Model\head\p_head_concern_blink_0.png" />
+    <Content Include="Content\Model\head\p_head_concern_blink_1.png" />
+    <Content Include="Content\Model\head\p_head_die.png" />
+    <Content Include="Content\Model\head\p_head_hurt.png" />
+    <Content Include="Content\Model\head\p_head_idle.png" />
+    <Content Include="Content\Model\head\p_head_idle_blink_0.png" />
+    <Content Include="Content\Model\head\p_head_idle_blink_1.png" />
+    <Content Include="Content\Model\head\p_head_push.png" />
+    <Content Include="Content\Model\head\p_head_turn_0.png" />
+    <Content Include="Content\Model\head\p_head_walk.png" />
+    <Content Include="Content\Model\legs\p_leg_a.png" />
+    <Content Include="Content\Model\legs\p_leg_idle_0.png" />
+    <Content Include="Content\Model\legs\p_leg_walk_0.png" />
+    <Content Include="Content\Model\legs\p_pelvis_die.png" />
+    <Content Include="Content\Model\legs\p_pelvis_idle.png" />
+    <Content Include="Content\Model\legs\p_pelvis_walk.png" />
+    <Content Include="Content\Model\legs\p_thigh_a.png" />
+    <Content Include="Content\Model\legs\p_thigh_idle_0.png" />
+    <Content Include="Content\Model\legs\p_thigh_walk_0.png" />
+    <Content Include="Content\Model\mon_arms\forearm_0.png" />
+    <Content Include="Content\Model\mon_arms\forearm_a.png" />
+    <Content Include="Content\Model\mon_arms\hand_0_0.png" />
+    <Content Include="Content\Model\mon_arms\hand_0_1.png" />
+    <Content Include="Content\Model\mon_arms\hand_0_2.png" />
+    <Content Include="Content\Model\mon_arms\hand_0_3.png" />
+    <Content Include="Content\Model\mon_arms\hand_a_0.png" />
+    <Content Include="Content\Model\mon_arms\hand_a_1.png" />
+    <Content Include="Content\Model\mon_arms\hand_a_2.png" />
+    <Content Include="Content\Model\mon_arms\hand_a_3.png" />
+    <Content Include="Content\Model\mon_arms\shoulder_0.png" />
+    <Content Include="Content\Model\mon_arms\shoulder_a.png" />
+    <Content Include="Content\Model\mon_head\head_0.png" />
+    <Content Include="Content\Model\mon_head\head_1.png" />
+    <Content Include="Content\Model\mon_head\head_2.png" />
+    <Content Include="Content\Model\mon_head\head_3.png" />
+    <Content Include="Content\Model\mon_legs\foot_0.png" />
+    <Content Include="Content\Model\mon_legs\foot_a.png" />
+    <Content Include="Content\Model\mon_legs\pelvis_0.png" />
+    <Content Include="Content\Model\mon_legs\thigh_0.png" />
+    <Content Include="Content\Model\mon_legs\thigh_a.png" />
+    <Content Include="Content\Model\mon_shadows\shadow_idle.png" />
+    <Content Include="Content\Model\mon_torso\torso_0.png" />
+    <Content Include="Content\Model\torso\p_torso_front.png" />
+    <Content Include="Content\Model\torso\p_torso_idle.png" />
+    <Content Include="Content\Model\torso\p_torso_jump.png" />
+    <Content Include="Content\Model\torso\p_torso_punch_0.png" />
+    <Content Include="Content\Model\torso\p_torso_walk.png" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Example.xnb" />
+    <None Include="Content\fadeout.xnb" />
+    <None Include="Content\gui.xnb" />
+    <None Include="Content\maps\map1.tmx" />
+    <None Include="Content\mindTittle\frame_1.xnb" />
+    <None Include="Content\mindTittle\frame_2.xnb" />
+    <None Include="Content\mindTittle\frame_3.xnb" />
+    <None Include="Content\mindTittle\frame_4.xnb" />
+    <None Include="Content\mindTittle\frame_5.xnb" />
+    <None Include="Content\mindTittle\frame_6.xnb" />
+    <None Include="Content\mindTittle\frame_7.xnb" />
+    <None Include="Content\mindTittle\frame_8.xnb" />
+    <None Include="Content\mindTittle\frame_9.xnb" />
+    <None Include="Content\Model\Example.scml" />
+    <None Include="Content\Model\player.scml" />
+    <Content Include="Content\player.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\overworlde.xnb" />
+    <None Include="Content\tileset\tiles1.xnb" />
+    <None Include="Content\tittle.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Load\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
